@@ -1,0 +1,122 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;800&family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="Style.css">
+<title>Webpage Including Form</title>
+<style type="text/css">
+	body{
+			background-color: lightblue;
+            
+		}
+		.c1{
+			height: 800px;
+			width: auto;
+			background-image: url(Image/Formtemp.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 50px;
+		}
+		.c2{
+			height: 800px;
+			width: 800px;
+/*			border: solid;*/
+			margin-left: auto;
+		}
+		form{
+			height: 780px;
+			width: 700px;
+    		border: solid white;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 20px;
+			font-family: 'Baloo Bhai 2';
+		}
+		.in-box{
+			height: 50px;
+			width: 300px;
+			margin-top: 10px;
+			font-size: 20px;
+		}
+		.sign-up-btn{
+			height: 50px;
+			width: 250px;
+            position: relative;
+            top: 120px;
+            left: -170px;
+            background-color: darkblue;
+            color: white;
+		}
+		@media(max-width: 1800px)
+		{
+			.c1{
+				background-image: none;
+			}
+			.c2{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+</style>
+</head>
+<body>
+<div class="c1">
+<div class="c2">
+<form>
+	<h1 style="font-family: monospace;">Sign up</h1>
+	<div style="height: 50px; width: 300px; display: inline-block; margin: 20px; border: solid;">
+	<label>FIRST NAME</label><br>
+	<input class="in-box" type="text" name="txtfname">
+	</div>
+	<div style="height: 50px; width: 300px; display: inline-block; margin: 20px;">
+	<label>LAST NAME</label><br>
+	<input class="in-box" type="text" name="txtlname">
+    </div>
+    <div style="height: 50px; width: 300px; display: inline-block; margin: 20px;">
+	<label>PHONE</label><br>
+	<input class="in-box" type="number" name="txtnum">
+    </div>
+    <div style="height: 50px; width: 300px; display: inline-block; margin: 20px;">
+	<label>EMAIL</label><br>
+	<input class="in-box" type="text" name="txtmail">
+    </div>
+    <div style="height: 50px; width: 300px; display: inline-block; margin: 20px;">
+	<label>GENDER</label><br>
+	<label>MALE</label><input type="radio" name="rdo">
+	<label>FEMALE</label><input type="radio" name="rdo">
+    </div>
+    <div style="height: 50px; width: 300px; display: inline-block; margin: 20px;">
+	<label>DOB</label><br>
+	<input class="in-box" type="date" name="txtdob">
+   </div>
+    <div style="height: 50px; width: 300px; display: inline-block; margin: 20px;">
+	<label>ADDRESS</label><br>
+	<input class="in-box" type="text"  name="textadd">
+   </div>
+  <div style="height: 50px; width: 300px; display: inline-block; margin: 20px;">
+	<label>SELECT COURSES</label><br>
+	<label>C</label><input type="checkbox" name="ckh1">
+	<label>C++</label><input type="checkbox" name="ckh2">
+	<label>JAVA</label><input type="checkbox" name="ckh3">
+	<label>PYTHON</label><input type="checkbox" name="ckh4">
+    </div>
+   <div style="height: 50px; width: 300px; display: inline-block; margin: 20px;">
+	<label>PASSWORD</label><br>
+	<input class="in-box" type="password" name="txtpass">
+    </div>
+    <div style="height: 50px; width: 300px; display: inline-block; margin: 20px;">
+	<label>CONFORM PASSWORD</label><br>
+	<input class="in-box" type="password" name="txtcpass"></div>
+	<div style="height: 50px; width: 300px; display: inline-block; margin: 20px; margin-top: 60px;">
+	<input type="checkbox" name="ckhterms"><label> I accept terms and conditions</label></div>
+	<button class="sign-up-btn">SIGN UP</button> 
+</form>
+</div>
+</div>
+</body>
+</html>
